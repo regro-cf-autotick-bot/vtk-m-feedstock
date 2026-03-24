@@ -1,13 +1,15 @@
+MACOSX_DEPLOYMENT_TARGET:
+- '11.0'
+MACOSX_SDK_VERSION:
+- '11.0'
 c_compiler:
-- gcc
+- clang
 c_compiler_version:
-- '12'
+- '19'
 c_stdlib:
-- sysroot
+- macosx_deployment_target
 c_stdlib_version:
-- '2.17'
-cdt_name:
-- conda
+- '11.0'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -15,24 +17,27 @@ channel_targets:
 cuda_compiler:
 - cuda-nvcc
 cuda_compiler_version:
-- '12.4'
+- None
 cxx_compiler:
-- gxx
+- clangxx
 cxx_compiler_version:
-- '12'
-docker_image:
-- quay.io/condaforge/linux-anvil-x86_64:alma9
+- '19'
 github_actions_labels:
+- '12'
+- '12.4'
+- '14'
+- None
 - cirun-openstack-cpu-2xlarge
 hdf5:
-- 1.14.6
+- '2'
+llvm_openmp:
+- '19'
+macos_machine:
+- x86_64-apple-darwin13.4.0
 target_platform:
-- linux-64
-tk:
-- '8.6'
+- osx-64
 vtk:
-- 9.3.1
+- 9.6.0
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-  - cuda_compiler_version

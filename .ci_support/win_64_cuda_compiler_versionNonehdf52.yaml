@@ -1,0 +1,26 @@
+c_compiler:
+- vs2022
+c_stdlib:
+- vs
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+cuda_compiler:
+- cuda-nvcc
+cuda_compiler_version:
+- None
+cxx_compiler:
+- vs2022
+github_actions_labels:
+- '12'
+- '12.4'
+- '14'
+- None
+- cirun-openstack-cpu-2xlarge
+hdf5:
+- '2'
+target_platform:
+- win-64
+vtk:
+- 9.6.0
